@@ -12,16 +12,27 @@ The site is designed to showcase my resume, portfolio, background, and contact i
 Professional-Website/
 │
 ├── css/ # Stylesheets for the site
+
 ├── images/ # Image assets
+
 ├── interactive-map/ # Interactive map feature
+
 │
+
 ├── bio.html # "About Me" page
+
 ├── contact.html # Contact form and info
+
 ├── cv.html # Online resume/CV
+
 ├── index.html # Homepage
+
 ├── portfolio.html # Portfolio/projects showcase
+
 │
+
 ├── Corvinna.Curtis Resume.docx # Resume (downloadable)
+
 ├── README.md # Project documentation
 
 ## ✨ Features
