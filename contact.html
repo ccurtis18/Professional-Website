@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cori Curtis — Contact</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Cori Curtis</h1>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="bio.html">Bio</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="cv.html">Curriculum Vitae</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container">
+
+    <!-- Typing intro (styled like your other page headers) -->
+    <section class="page-hero">
+      <span class="eyebrow">Get in touch</span>
+      <h1 class="page-title">Hey there — let’s talk</h1>
+      <p id="typing-text" class="lead"></p>
+
+      <noscript>
+        <p class="lead">
+          I’m always happy to chat. Project questions, quick ideas, or just coffee, tacos, and huskies —
+          use the form below or email me directly.
+        </p>
+      </noscript>
+    </section>
+
+    <!-- Contact options -->
+    <section class="section">
+      <div class="box-2" style="display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        <a class="button button-primary" href="mailto:c.wogerman1213@gmail.com">Email me</a>
+        <a class="button button-ghost" href="https://www.linkedin.com/in/corvinna-curtis" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="button button-ghost" href="https://github.com/ccurtis18" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </section>
+
+    <!-- Contact form -->
+    <section class="section">
+      <h2>Contact form</h2>
+      <!-- Mailto keeps it simple for now; replace action with your backend later -->
+      <form class="my-form"
+            action="mailto:c.wogerman1213@gmail.com"
+            method="post"
+            enctype="text/plain">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" type="text" name="Name" autocomplete="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" type="text" name="Email" autocomplete="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input id="subject" type="text" name="Subject" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="Message" required></textarea>
+        </div>
+
+        <input class="button" type="submit" value="Send" />
+      </form>
+      <p class="muted" style="color:#667085;margin-top:8px;font-size:13px">
+        Tip: if your mail client doesn’t open, just email me at <a href="mailto:c.wogerman1213@gmail.com">c.wogerman1213@gmail.com</a>.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Cori Curtis</p>
+    </div>
+  </footer>
+
+  <!-- Typing animation script -->
+  <script>
+  // Lines to loop forever
+  const lines = [
+    "Want help on a project? Send me a message.",
+    "Prefer email? c.wogerman1213@gmail.com works great.",
+    "Or if you want to chat about coffee ☕, tacos 🌮, or huskies 🐾 — I’m all ears."
+  ];
+
+  const el = document.getElementById('typing-text');
+
+  if (el) {
+    let i = 0;           // which line
+    let j = 0;           // which char
+    let typing = true;   // typing or deleting
+
+    const TYPE_SPEED = 100;     // ms per char while typing
+    const ERASE_SPEED = 16;    // ms per char while deleting
+    const HOLD_FULL = 1100;    // pause when a line is complete
+    const HOLD_EMPTY = 420;    // pause when cleared before next line
+
+    function tick() {
+      const line = lines[i];
+
+      if (typing) {
+        el.textContent = line.slice(0, j + 1);
+        j++;
+        if (j < line.length) {
+          setTimeout(tick, TYPE_SPEED);
+        } else {
+          typing = false;
+          setTimeout(tick, HOLD_FULL);
+        }
+      } else {
+        el.textContent = line.slice(0, j - 1);
+        j--;
+        if (j > 0) {
+          setTimeout(tick, ERASE_SPEED);
+        } else {
+          typing = true;
+          i = (i + 1) % lines.length; // loop to the next line forever
+          setTimeout(tick, HOLD_EMPTY);
+        }
+      }
+    }
+
+    setTimeout(tick, 350); // small initial delay
+  }
+
+  // footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

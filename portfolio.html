@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cori Curtis — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Cori Curtis</h1>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="bio.html">Bio</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="cv.html">Curriculum Vitae</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Page header (matches home/bio style) -->
+    <section class="page-hero">
+      <span class="eyebrow">Work</span>
+      <h1 class="page-title">Portfolio</h1>
+      <p class="lead">
+        A few projects I’m proud of—from ServiceNow platform work to pure dev builds.
+        The interactive map is linked below; the rest include short blurbs and tech stacks.
+      </p>
+    </section>
+
+    <!-- Featured: Interactive Map -->
+    <section class="section">
+      <h2>Featured</h2>
+      <article class="proj-card featured">
+        <div class="proj-media">
+          <!-- Replace with your real thumbnail -->
+          <img src="images/interactive-map-thumb.jpg" alt="Screenshot of the interactive map project" />
+        </div>
+        <div class="proj-body">
+          <h3>Interactive Map</h3>
+          <p>
+            A fast, client-side interactive map with search/filters and smooth zoom.
+            Built to be easy to host anywhere (no backend). Accessible, keyboard-friendly controls.
+          </p>
+          <div class="proj-tags">
+            <span class="pill">JavaScript</span>
+            <span class="pill">Leaflet / Maplibre*</span>
+            <span class="pill">HTML • CSS</span>
+          </div>
+          <div class="proj-actions">
+            <!-- POINT THIS TO YOUR MAP -->
+            <a class="button button-primary" href="interactive-map/tornado_map.html" target="_blank" rel="noreferrer">Open Interactive Map</a>
+            <!-- Optional case-study page later -->
+            <!-- <a class="button button-ghost" href="case-studies/interactive-map.html">Read case study</a> -->
+          </div>
+          <p class="muted" style="margin-top:6px;font-size:13px">
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- More projects -->
+    <section class="section">
+      <h2>More projects</h2>
+
+      <div class="proj-grid">
+        <article class="proj-card">
+          <div class="proj-body">
+            <h3>Interactive Map</h3>
+            <p>Client-side tornado explorer with search/filters and smooth zoom. Easy to host (no backend) and keyboard-friendly.</p>
+            <div class="proj-tags">
+              <span class="pill">JavaScript</span>
+              <span class="pill">Leaflet / Maplibre</span>
+              <span class="pill">HTML • CSS</span>
+            </div>
+            <div class="proj-actions">
+            <a class="button button-ghost"
+              href="https://github.com/ccurtis18/tornado-explorer"
+              target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card">
+          <div class="proj-body">
+            <h3>Professional Website</h3>
+            <p>Personal site built from scratch with a light brand palette, responsive layout, and reusable components. Includes portfolio, bio, CV, and a contact page with a looping typing effect.
+            </p>
+            <div class="proj-tags">
+              <span class="pill">HTML</span>
+              <span class="pill">CSS</span>
+              <span class="pill">JavaScript</span>
+            </div>
+            <div class="proj-actions">
+              <a class="button button-ghost" 
+              href="https://github.com/ccurtis18/Professional-Website"
+              target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card">
+          <div class="proj-body">
+            <h3>Fleet Vehicle Reservation</h3>
+            <p>Per-site visibility using <code>cmn_location</code> hierarchy, plus validation and reporting.</p>
+            <div class="proj-tags">
+              <span class="pill">Custom App</span>
+              <span class="pill">cmn_location</span>
+              <span class="pill">UX</span>
+            </div>
+            <div class="proj-actions">
+              <a class="button button-ghost" href="#" aria-disabled="true">Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card">
+          <div class="proj-body">
+            <h3>Full-Stack App</h3>
+            <p>
+              End-to-end web app from my CS465 course: backend APIs, frontend UI, and data persistence.
+              Focus on clean routes, clear models, and a straightforward UX
+            </p>
+            <div class="proj-tags">
+              <span class="pill">Full-Stack</span>
+              <span class="pill">REST-APIs</span>
+              <span class="pill">JavaScript</span>
+            </div>
+            <div class="proj-actions">
+              <a class="button button-ghost" 
+              href="https://github.com/ccurtis18/CS465-fullstack"
+              target="_blank" rel="noreferrer">
+              Details
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card">
+          <div class="proj-body">
+            <h3>OpenGL Scene</h3>
+            <p>3D desk scene with lighting, camera controls, and textured materials (C++/OpenGL).</p>
+            <div class="proj-tags">
+              <span class="pill">C++</span>
+              <span class="pill">OpenGL</span>
+              <span class="pill">Graphics</span>
+            </div>
+            <div class="proj-actions">
+              <a class="button button-ghost" 
+              href="https://github.com/ccurtis18/CS330---Comp-Graphic-and-Visualization"
+              target="_blank" rel="noreferrer">
+              Details
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Cori Curtis</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+</html>

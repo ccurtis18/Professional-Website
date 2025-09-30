@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cori Curtis — Bio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Cori Curtis</h1>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="bio.html" class="active">Bio</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="cv.html">Curriculum Vitae</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Page header (matches the home hero styling) -->
+    <section class="page-hero">
+      <span class="eyebrow">About me</span>
+      <h1 class="page-title">Hi, I'm Cori 👋</h1>
+      <p class="lead">
+        I’m a hands-on ServiceNow platform engineer <em>and</em> software developer. I like turning messy,
+        real-world problems into simple, predictable workflows—and writing plain-English docs so the
+        next person doesn’t have to mind-read me. When I’m not wrangling code, I’m hanging out with my
+        kiddo, lifting, or trying (and usually not succeeding) to keep a husky from “helping.”
+      </p>
+    </section>
+
+    <!-- Part admin / dev / maker — equal-height cards -->
+    <section class="section">
+      <h2>Part admin. Part developer. Part maker.</h2>
+
+      <div class="card-row">
+        <div class="block">
+          <h3>Part Admin (ServiceNow)</h3>
+          <ul>
+            <li>Employee Center, Service Portal, UI Builder</li>
+            <li>ACLs & roles that don’t over-grant; performance & indexing that matter</li>
+            <li>Clone hygiene, upgrade planning, rollout/runbooks you’ll thank me for later</li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <h3>Part Developer</h3>
+          <ul>
+            <li><strong>C++ (favorite)</strong> • OpenGL projects • problem-solving mindset</li>
+            <li>JavaScript/TypeScript • Node/Angular • Python • REST APIs • data syncs</li>
+            <li>ServiceNow scripting: GlideRecord, Business Rules, Scripted REST, Flow Designer</li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <h3>Part Maker</h3>
+          <ul>
+            <li>Clean UX over click-mazes</li>
+            <li>Incremental releases + clear rollback</li>
+            <li>Docs someone will actually read</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick facts -->
+    <section class="section">
+      <h2>Quick facts</h2>
+      <ul>
+        <li>Visual, hands-on learner—show me once, then let me build it.</li>
+        <li>High-protein baker, coffee enthusiast, bench-pressing my imposter syndrome.</li>
+        <li>Allergic to avocado 🥑 (tragic, truly).</li>
+        <li>Proud mom—my kiddo keeps me honest and motivated.</li>
+      </ul>
+    </section>
+
+    <!-- What I’m good at -->
+    <section class="section">
+      <h2>What I’m good at</h2>
+      <div class="box-2">
+        <p>
+          Turning “can you make the portal better?” into a scoped plan with taxonomy mapping, routing rules,
+          and measurable outcomes. Building integrations and scripted REST APIs. Writing maintainable C++/JS
+          that’s clear, tested, and documented. Fixing gnarly access issues <em>without</em> wildcard roles.
+          And shipping upgrades without chaos.
+        </p>
+      </div>
+    </section>
+
+    <!-- The not-normal story -->
+    <section class="section">
+      <h2>My story</h2>
+      <p>
+        I wasn’t hired for ServiceNow. I was hired as a systems engineer, then told, “Can you take on this application?”
+        Surprise: it was a whole platform nobody had managed in five years—and an upgrade was due <em>now</em>.
+        I broke it, then fixed it, and that’s how I learned: by owning it end-to-end as the only “ServiceNow anything.”
+        That’s been my lane for almost six years—being handed something ambiguous and figuring it out until it works
+        reliably.
+      </p>
+    </section>
+
+    <!-- CTAs -->
+    <section class="section">
+      <div class="cta-row">
+        <a class="button button-primary" href="portfolio.html">See my work</a>
+        <a class="button button-ghost" href="cv.html">View my CV</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Cori Curtis</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+</html>
