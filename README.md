@@ -10,7 +10,9 @@ The site is designed to showcase my resume, portfolio, background, and contact i
 
 ## 📂 Project Structure
 Professional-Website/
+
 │
+
 ├── css/ # Stylesheets for the site
 
 ├── images/ # Image assets
