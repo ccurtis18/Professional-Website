@@ -4,7 +4,7 @@ My professional website
 
 # 🌐 Professional Website
 
-This repository contains the source code for my personal professional website, hosted at [coricurtis.com](http://coricurtis.com) (coming soon).  
+This repository contains the source code for my personal professional website, hosted at [coricurtis.com](http://coricurtis.com).  
 The site is designed to showcase my resume, portfolio, background, and contact information in a clean and modern format.
 
 
